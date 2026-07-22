@@ -4,9 +4,9 @@ from flask import Flask, request
 import requests
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__enchantrea_bot__)
+logger = logging.getLogger(__name__)
 
-app = Flask(__enchantrea_bot__)
+app = Flask(__name__)
 
 # ទាញ Token ពី Environment Variable (កំណត់នៅលើ Render, កុំសរសេរដាក់ត្រង់នេះ)
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
