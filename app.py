@@ -4,13 +4,13 @@ from flask import Flask, request
 import requests
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__enchantrea_bot__)
 
-app = Flask(__name__)
+app = Flask(__enchantrea_bot__)
 
 # ទាញ Token ពី Environment Variable (កំណត់នៅលើ Render, កុំសរសេរដាក់ត្រង់នេះ)
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-TELEGRAM_API = f"https://api.telegram.org/bot{BOT_TOKEN}"
+TELEGRAM_API = f"https://api.telegram.org/bot{8831823954:AAHkLLISgDzVOLqfRGieSZ7gm6E2Z-6Ajqs}"
 
 # Secret token ដើម្បីការពារ webhook ពីអ្នកក្រៅ (ស្រេចចិត្តតែណែនាំឱ្យប្រើ)
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "")
